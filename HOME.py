@@ -28,5 +28,6 @@ st.markdown(
     ### For hosts:
     - Learn about the correlation between Attraction Index and other variables in **[Attraction index]**
     - Distance vs Attraction Index in **[Distance]**
+    - Evaluate your homestay level in **[Reference Index]**
 """
 )
