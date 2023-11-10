@@ -27,9 +27,7 @@ superhost = st.sidebar.radio(
 )
 
 business = st.sidebar.radio(
-    "Business(If the Business has more than 4 offers
-
-, 1 is True and 0 is Flase):",
+    "Business(If the Business has more than 4 offers):",
     df["Business"].unique()
 )
 
