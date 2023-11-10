@@ -27,7 +27,7 @@ superhost = st.sidebar.radio(
 )
 
 business = st.sidebar.radio(
-    "Business(If the Business has more than 4 offers):",
+    "Business:",
     df["Business"].unique()
 )
 
@@ -40,11 +40,7 @@ df_selection = df[(df['City']==city) & (df['Person Capacity']==person) & (df['Bu
 
 # 主页面
 st.title(":bar_chart: Average Price")
-st.markdown(""" **This page presents the average price per person across different room type.**
 
-If you want to select a residential hostel with friends or family, which room type is the best deal? Are prices cheaper on weekdays than on weekends?
-- Step1: 👈Select what you want in the sidebar
-- Step2: Barchart will give you some information. You can clearly find the lowest bar in the figure.  """)
 # 画图
 
 table = df_selection.groupby(['Person Capacity','Room Type','Day'])
@@ -71,5 +67,25 @@ ax1 = table_mean.plot(kind='bar')
 ax1.set_ylabel('Average Fare Per Person')
 ax1.set_title('Average Price Per Person across Room Type')
 
+st.pyplot()
+
+
+            
+st.markdown(""" 
+This is a boxplot about price analysis in different city. 
+This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
+  """)
+
+fig, ax = plt.subplots()
+
+df[df['Price']<2000].boxplot(column=['Price'],by = ['City'],ax=ax,meanline=True,showmeans=True);
+
+
+plt.xticks(rotation=60)
+## Now we can actually set the Title
+plt.title("Price by Different City")
+
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
 
