@@ -19,7 +19,7 @@ st.markdown(
     - Function: The app not only aims to help customers learn about folklore market situation of this city they want to go and make decisions validly, 
     but also help hosts understand their own strengths and weaknesses and make improvements.
 
-    ##### 👈 You can chosee a page in the siderbar!
+    ##### 👈 You can choose a page in the siderbar!
 
     ### For customers:
     - Help you make decisions in Price **[Price]**
