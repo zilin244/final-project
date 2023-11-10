@@ -12,7 +12,11 @@ df = get_data()
 
 st.set_page_config(page_title="Room Type", page_icon=":key:", layout="wide")
 st.title(":chart: Popular Room Types in Different Cities")
-st.markdown("##")
+st.markdown(""""
+There are different popular room types in different places. People often want to experience a popular local room type as a special experience. 
+**This page analyzes the number and proportion of room types in different cities.**
+- Figure 1 shows the total number of room types in different cities on Airbnb.
+""")
 
 df_by = df.groupby(['City','Room Type'])
 table_count = df_by[['Price']].count()
