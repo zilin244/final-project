@@ -37,7 +37,7 @@ st.pyplot()
 
 
 
-# 侧边栏
+
 st.sidebar.header("Please filter:")
 city = st.sidebar.radio(
     "City:",
@@ -61,7 +61,7 @@ person = st.sidebar.radio(
 
 df_selection = df[(df['City']==city) & (df['Person Capacity']==person) & (df['Business']==business) & (df['Superhost']==superhost)]
 
-# 主页面
+
 
 st.markdown(""" After knowing the overall price of the homestay in each city，this **barchart** presents the average price per person across different room type.
 
@@ -70,7 +70,7 @@ If you want to select a residential hostel with friends or family, which room ty
 - Step1: 👈Select what you want in the sidebar
 - Step2: Barchart will give you some information.You can clearly find the lowest bar in the figure.
 """)
-# 画图
+
 
 table = df_selection.groupby(['Person Capacity','Room Type','Day'])
 mean_price = table[['Price']].mean()
