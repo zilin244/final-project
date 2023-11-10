@@ -17,19 +17,29 @@ st.set_page_config(page_title="Average price per person", page_icon=":bar_chart:
 st.title(":smile: Service")
 st.markdown("### In this page, the level of serive across different city is persented. ")
 
-df1=df[['Cleanliness Rating','Superhost','Metro Distance (km)','Normalised Restraunt Index']]
+df_at=df.copy()
 
-l = df1.columns.values ## List of the variables from the columns
-number_of_columns= len(l) ## For the plot
-number_of_rows = 1 ## For the plot
+fig, ax = plt.subplots()
 
-fig, ax = plt.subplots(figsize=(2*number_of_columns,10*number_of_rows))
-for i in range(0, number_of_columns):
-    plt.subplot(number_of_rows + 1,number_of_columns,i+1)
-    plt.title(l[i])
-    plt.style.use("seaborn-v0_8")
-    sns.boxplot(df1[l[i]],color='green',orient='v')
-    plt.tight_layout();
-plt.ylim(0.5,1.0)
+df_at[df_at['Cleanliness Rating']>6].boxplot(column=['Cleanliness Rating'],by = ['City'],ax=ax,meanline=True,showmeans=True);
+
+fig.suptitle("")
+plt.xticks(rotation=60)
+## Now we can actually set the Title
+plt.title("Cleanliness Rating by Different City")
+
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot(fig)
+
+
+fig, ax = plt.subplots()
+
+df_at[df_at['Normalised Restraunt Index']<100].boxplot(column=['Normalised Restraunt Index'],by = ['City'],ax=ax,meanline=True,showmeans=True);
+
+fig.suptitle("")
+plt.xticks(rotation=60)
+## Now we can actually set the Title
+plt.title("Normalised Restraunt Index by Different City")
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
+st.pyplot()
