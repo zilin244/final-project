@@ -11,7 +11,7 @@ def get_data():
 df = get_data()
 
 st.set_page_config(page_title="Room Type", page_icon=":key:", layout="wide")
-st.title(":piechart: Popular Room Types in Different Cities")
+st.title(":bar_chart: Popular Room Types in Different Cities")
 st.markdown("""
 There are different popular room types in different places. People often want to experience a popular local room type as a special experience. 
 **This page analyzes the number and proportion of room types in different cities.**
