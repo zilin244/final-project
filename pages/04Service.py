@@ -22,8 +22,8 @@ df1=df[['Cleanliness Rating','Superhost','Metro Distance (km)','Normalised Restr
 l = df1.columns.values ## List of the variables from the columns
 number_of_columns= len(l) ## For the plot
 number_of_rows = 1 ## For the plot
-fig, ax = plt.subplots()
-plt.subplots(figsize=(2*number_of_columns,10*number_of_rows))
+
+fig, ax = plt.subplots(figsize=(2*number_of_columns,10*number_of_rows))
 for i in range(0, number_of_columns):
     plt.subplot(number_of_rows + 1,number_of_columns,i+1)
     plt.title(l[i])
