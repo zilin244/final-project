@@ -13,7 +13,7 @@ def get_data():
 
 df = get_data()
 
-            
+st.title(":chart: Price")         
 st.markdown(""" 
 This is a boxplot about price analysis in different city. 
 This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
@@ -60,7 +60,7 @@ person = st.sidebar.radio(
 df_selection = df[(df['City']==city) & (df['Person Capacity']==person) & (df['Business']==business) & (df['Superhost']==superhost)]
 
 # 主页面
-st.title(":bar_chart: Average Price")
+
 st.markdown(""" **This page preshents the average price per person across different room type.**
 
 If you want to select a residential hostel with friends or family, which room types is the best deal? Are prices cheaper on weekdays than on weekends?
