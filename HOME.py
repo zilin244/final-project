@@ -17,7 +17,7 @@ st.markdown(
     
     (https://www.kaggle.com/datasets/dipeshkhemani/airbnb-cleaned-europe-dataset).
     - Target user: The target users of this app is customers and hosts. 
-    - Aims: The app not only aims to help customers learn about folklore market situation of this city they want to go and make decisions validly, 
+    - Function: The app not only aims to help customers learn about folklore market situation of this city they want to go and make decisions validly, 
     but also help hosts understand their own strengths and weaknesses and make improvements.
 
     ##### 👈 You can chosee a page in the siderbar!
