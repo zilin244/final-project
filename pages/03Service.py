@@ -12,7 +12,7 @@ def get_data():
 
 df = get_data()
 
-st.set_page_config(page_title="Average price per person", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="Service", page_icon=":bar_chart:", layout="wide")
 
 st.title(":large_blue_circle: Service")
 st.markdown("""In this page, **the level of serive across different city** is persented.
