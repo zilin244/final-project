@@ -13,6 +13,27 @@ def get_data():
 
 df = get_data()
 
+            
+st.markdown(""" 
+This is a boxplot about price analysis in different city. 
+This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
+  """)
+
+fig, ax = plt.subplots()
+
+df[df['Price']<2000].boxplot(column=['Price'],by = ['City'],ax=ax,meanline=True,showmeans=True);
+
+
+plt.xticks(rotation=60)
+## Now we can actually set the Title
+plt.title("Price by Different City")
+
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
+st.pyplot()
+
+
+
 
 # 侧边栏
 st.sidebar.header("Please filter:")
@@ -76,22 +97,5 @@ ax1.set_title('Average Price Per Person across Room Type')
 st.pyplot()
 
 
-            
-st.markdown(""" 
-This is a boxplot about price analysis in different city. 
-This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
-  """)
 
-fig, ax = plt.subplots()
-
-df[df['Price']<2000].boxplot(column=['Price'],by = ['City'],ax=ax,meanline=True,showmeans=True);
-
-
-plt.xticks(rotation=60)
-## Now we can actually set the Title
-plt.title("Price by Different City")
-
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot()
 
