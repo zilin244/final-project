@@ -28,7 +28,7 @@ fig, ax = plt.subplots()
 
 df_at[df_at['Cleanliness Rating']>6].boxplot(column=['Cleanliness Rating'],by = ['City'],ax=ax,meanline=True,showmeans=True);
 
-fig.suptitle("")
+
 plt.xticks(rotation=60)
 ## Now we can actually set the Title
 plt.title("Cleanliness Rating by Different City")
