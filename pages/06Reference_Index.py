@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Reference Index", page_icon=":key:", layout="wide")
 st.title('Self evaluate your homestay level!')
-st.write("📍Do you want to know where your house's different indices are located in the city?")
+st.write("📍Do you want to know where your homestay's different indices are located in the city?")
 st.write("👉Here are the average, maximum, and minimum values of different indices for different cities. ")
-st.write("👀By comparing the index of one's own house with the average, maximum, and minimum values on this image, the host can find the location of different indices of one's own house for better improvement.")
+st.write("👀By comparing the index of one's own homestay with the average, maximum, and minimum values on this image, the host can find the location of different indices of one's own homestay for better improvement.")
 
 # 读取数据
 df = pd.read_csv('Aemf1.csv')
