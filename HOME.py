@@ -1,15 +1,14 @@
 import streamlit as st
 
-# 设置页面标题和图标
 st.set_page_config(page_title="Airbnb Europe Dataset", page_icon=":house:")
 
-# 设置动画
+
 st.balloons()
 
-# 创建一个Streamlit应用
+
 st.title("👋Welcome to Airbnb Europe Dataset!")
 
-# 添加标题动画效果
+
 st.markdown(
     """
     Airbnb Europe Dataset is an app which provides a detailed analysis of the data about residential hostels of 9 famous cities in Europe. 
