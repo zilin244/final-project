@@ -44,7 +44,7 @@ st.markdown(""" **This page presents the average price per person across differe
 
 If you want to select a residential hostel with friends or family, which room type is the best deal? Are prices cheaper on weekdays than on weekends?
 - Step1: 👈Select what you want in the sidebar
-- Step2: Barchart will give you some information  """)
+- Step2: Barchart will give you some information. You can clearly find the lowest bar in the figure.  """)
 # 画图
 
 table = df_selection.groupby(['Person Capacity','Room Type','Day'])
