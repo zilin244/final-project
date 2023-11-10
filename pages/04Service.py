@@ -42,4 +42,4 @@ for i in range(0, number_of_columns):
     plt.tight_layout();
 plt.ylim(0.5,1.0)
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot()
+st.pyplot(fig)
