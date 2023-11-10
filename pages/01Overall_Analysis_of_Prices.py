@@ -17,7 +17,7 @@ st.set_page_config(page_title="Correlation Analysis of Price", page_icon=":chart
 st.title(":chart: Correlation Analysis of Price")
 
 st.markdown(""" 
-            #####  This page focus on **the analysis of price**. In this page, you can learn about the correlation between prices and other variables in European Airbnb and further analysis of the price.
+            **This page focus on **the analysis of price**. In this page, you can learn about the correlation between prices and other variables in European Airbnb and further analysis of the price.**
              
 1. Here's a heatmap about price and its top variables that are the most correlated in absolute value
   """)
