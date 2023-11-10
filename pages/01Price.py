@@ -67,7 +67,7 @@ df_selection = df[(df['City']==city) & (df['Person Capacity']==person) & (df['Bu
 
 st.markdown(""" After knowing the overall price of the homestay in each city，this **barchart** presents the average price per person across different room type.
 
-If you want to select a residential hostel with friends or family, which room types is the best deal? Are prices cheaper on weekdays than on weekends?
+📍If you want to select a residential hostel with friends or family, which room types is the best deal? Are prices cheaper on weekdays than on weekends?
 
 - Step1: 👈Select what you want in the sidebar
 - Step2: Barchart will give you some information.You can clearly find the lowest bar in the figure.
