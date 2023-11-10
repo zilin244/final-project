@@ -13,6 +13,8 @@ def get_data():
 
 df = get_data()
 
+st.set_page_config(page_title="Price", page_icon=":heavy_dollar_sign:", layout="wide")
+
 st.title(":chart: Price")         
 st.markdown(""" This page show anlysis of Price aiming to help you know much about price and make reasonable decisions.
 
