@@ -12,6 +12,6 @@ This dataset analyzes the code from two perspectives to provide relevant informa
 ##### RoomType: https://final-project-ievnnsgv2xnjchoumgb5sc.streamlit.app/Room_Type
 ##### Service: https://final-project-ievnnsgv2xnjchoumgb5sc.streamlit.app/Service
 ### Hosts
-##### Attraction Index: https://final-project-ievnnsgv2xnjchoumgb5sc.streamlit.app/Attraction_index
+##### Attraction Index: https://final-project-ievnnsgv2xnjchoumgb5sc.streamlit.app/Attraction_Index
 ##### Distance: https://final-project-ievnnsgv2xnjchoumgb5sc.streamlit.app/Distance
 ##### Reference: https://final-project-ievnnsgv2xnjchoumgb5sc.streamlit.app/Reference_Index
