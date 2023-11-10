@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+st.set_page_config(page_title="Attraction Index", page_icon=":key:", layout="wide")
+
 st.title(":star: Correlation of Attraction Index")
 st.markdown("""   **This page focus on the analysis of Attraction Index.** 
 
