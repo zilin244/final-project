@@ -14,7 +14,7 @@ df = get_data()
 
 st.set_page_config(page_title="Average price per person", page_icon=":bar_chart:", layout="wide")
 
-st.title(":smile: Service")
+st.title(":large_blue_circle: Service")
 st.markdown("""In this page, **the level of serive across different city** is persented.
             
 If you are a person who takes service very seriously, which city will give you a better experience?
