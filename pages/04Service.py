@@ -40,6 +40,6 @@ for i in range(0, number_of_columns):
     plt.style.use("seaborn-v0_8")
     sns.boxplot(df1[l[i]],color='green',orient='v')
     plt.tight_layout();
-
+plt.ylim(0.5,1.0)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
