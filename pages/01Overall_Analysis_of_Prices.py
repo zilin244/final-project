@@ -19,7 +19,7 @@ st.title(":chart: Correlation Analysis of Price")
 st.markdown(""" 
             #####  This page focus on **the analysis of price**. In this page, you can learn about the correlation between prices and other variables in European Airbnb and further analysis of the price.
              
-Here's a heatmap about price and its top variables that are the most correlated in absolute value
+1. Here's a heatmap about price and its top variables that are the most correlated in absolute value
   """)
 
 plt.style.use("seaborn-v0_8")
@@ -54,9 +54,9 @@ st.markdown("""
   """)
 
 st.markdown(""" 
-This is a boxplot about price analysis in different city. 
+2. This is a boxplot about price analysis in different city. 
 This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
-  """)
+You can clearly find the mean value, median and extreme value in the figrue """)
 
 fig, ax = plt.subplots()
 
