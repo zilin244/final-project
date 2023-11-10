@@ -5,7 +5,10 @@ import seaborn as sns
 
 st.title(":star: Correlation of Attraction Index")
 st.markdown("""   **This page focus on the analysis of Attraction Index.** 
+
 In this page, you can learn about the correlation between Attraction Index and other variables in European Airbnb and further analysis of the Attraction Index.
+
+
 
  Here's a heatmap about Attraction Index and its top variables that are the most correlated in absolute value """)
 # read the dataset file
