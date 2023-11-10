@@ -63,7 +63,7 @@ df_selection = df[(df['City']==city) & (df['Person Capacity']==person) & (df['Bu
 
 # 主页面
 
-st.markdown(""" **This page preshents the average price per person across different room type.**
+st.markdown(""" **This **barchart** preshents the average price per person across different room type.**
 
 If you want to select a residential hostel with friends or family, which room types is the best deal? Are prices cheaper on weekdays than on weekends?
 
