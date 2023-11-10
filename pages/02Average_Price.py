@@ -40,7 +40,13 @@ df_selection = df[(df['City']==city) & (df['Person Capacity']==person) & (df['Bu
 
 # 主页面
 st.title(":bar_chart: Average Price")
+st.markdown(""" **This page preshents the average price per person across different room type.**
 
+If you want to select a residential hostel with friends or family, which room types is the best deal? Are prices cheaper on weekdays than on weekends?
+
+- Step1: Select what you want in the sidebar
+- Step2: Barchart will give you some information.You can clearly find the lowest bar in the figure.
+""")
 # 画图
 
 table = df_selection.groupby(['Person Capacity','Room Type','Day'])
