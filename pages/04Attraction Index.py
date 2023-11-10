@@ -12,7 +12,7 @@ In this page, you can learn about the correlation between Attraction Index and o
 
 
 
- Here's a heatmap about Attraction Index and its top variables that are the most correlated in absolute value """)
+ 👉Here's a heatmap about Attraction Index and its top variables that are the most correlated in absolute value """)
 # read the dataset file
 df = pd.read_csv('Aemf1.csv')
 df_t_num = df[['Attraction Index','Price','Person Capacity','Superhost','Multiple Rooms','Business','Cleanliness Rating','Guest Satisfaction','Bedrooms','City Center (km)','Metro Distance (km)','Restraunt Index']]
@@ -32,7 +32,7 @@ ax.set_title('Quality Correlation Matrix')
 # show on streamlit
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot(fig)
-st.markdown(""" From the heatmap, we can see that the variable with a high correlation with the Attraction Index is Restraunt Index, City Center(km), Price and Metro Distance(km), where Restraunt Index and Price are positively correlated, and City Center (km) and Metro Distance(km) are negatively correlated.
+st.markdown("""👀 From the heatmap, we can see that the variable with a high correlation with the Attraction Index is Restraunt Index, City Center(km), Price and Metro Distance(km), where Restraunt Index and Price are positively correlated, and City Center (km) and Metro Distance(km) are negatively correlated.
 
 That is to say, to improve the Attraction Index, the host can increase the Restraunt Index and Price, reduce City Center (km) and Metro Distance(km). What's more, the correlation between other variables and Attraction Index is very low, we can ignore their impact on Attraction Index.
 
