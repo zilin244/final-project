@@ -36,10 +36,10 @@ fig, ax = plt.subplots()
 
 df_at[df_at['Normalised Restraunt Index']<100].boxplot(column=['Normalised Restraunt Index'],by = ['City'],ax=ax,meanline=True,showmeans=True);
 
-fig.suptitle("")
+
 plt.xticks(rotation=60)
 ## Now we can actually set the Title
 plt.title("Normalised Restraunt Index by Different City")
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot()
+st.pyplot(fig)
