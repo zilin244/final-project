@@ -1,5 +1,6 @@
 # Airbnb Cleaned Europe Dataset
-### Team11
+### Author: Team11
+Team member: Danying Wei, Linxi Xia, Zhuzi Xiao, Xuanqi Zhang, Xiangyue Zhao, Zilin Zhang
 #
 #### Source: https://www.kaggle.com/datasets/dipeshkhemani/airbnb-cleaned-europe-dataset
 #
