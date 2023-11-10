@@ -42,14 +42,14 @@ ax.set_ylabel("Count", fontsize = 15)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
 
-st.markdown(""""
+st.markdown("""
 
 - The pie chart gives you a more intuitive sense of the proportion of different room types in the city.
 
-Enter the city you want to search for below
+
 """)
 city = df['City'].unique()
-c = st.text_input('Please choess a city: ', value='Amsterdam', key=None)
+c = st.text_input('Enter the city you want to search for: ', value='Amsterdam', key=None)
 city = str(c)
 table_p = pd.pivot_table(data=table_count,
                    values = "Price",
