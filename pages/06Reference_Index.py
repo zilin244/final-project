@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.set_page_config(page_title="Reference Index", page_icon=":key:", layout="wide")
 st.title('Self evaluate your homestay level!')
 st.write("📍Do you want to know where your house's different indices are located in the city?")
 st.write("👉Here are the average, maximum, and minimum values of different indices for different cities. ")
