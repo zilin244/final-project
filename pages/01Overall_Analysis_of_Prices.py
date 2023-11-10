@@ -56,6 +56,7 @@ st.markdown("""
 st.markdown(""" 
 2. This is a boxplot about price analysis in different city. 
 This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
+
 You can clearly find the mean value, median and extreme value in the figrue """)
 
 fig, ax = plt.subplots()
