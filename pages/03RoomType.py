@@ -12,10 +12,14 @@ df = get_data()
 
 st.set_page_config(page_title="Room Type", page_icon=":key:", layout="wide")
 st.title(":chart: Popular Room Types in Different Cities")
-st.markdown(""""
+st.markdown("""
 There are different popular room types in different places. People often want to experience a popular local room type as a special experience. 
 **This page analyzes the number and proportion of room types in different cities.**
-- Figure 1 shows the total number of room types in different cities on Airbnb.
+
+What are the popular housing types in your target city?
+
+- The bar chart shows the total number of room types in different cities on Airbnb.
+
 """)
 
 df_by = df.groupby(['City','Room Type'])
@@ -38,7 +42,12 @@ ax.set_ylabel("Count", fontsize = 15)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
 
+st.markdown(""""
 
+- The pie chart gives you a more intuitive sense of the proportion of different room types in the city.
+
+Enter the city you want to search for below
+""")
 city = df['City'].unique()
 c = st.text_input('Please choess a city: ', value='Amsterdam', key=None)
 city = str(c)
