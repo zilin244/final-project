@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-st.title(":map: City Center vs Attraction Index")
+st.title(" :global: City Center vs Attraction Index")
 st.write("👉You can look at the relationship between ") 
 st.write("👉Attraction Index and distance between homestays and city center") 
 
