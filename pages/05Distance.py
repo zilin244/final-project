@@ -69,4 +69,8 @@ ax_filtered.legend()
 
 # show on streamlit
 st.pyplot(fig_filtered)
+st.markdown(""" Based on the Scatter plot, we can find that: 
+there is a certain negative correlation between the Attraction index and the distance of the city center.
 
+As we pull the button, the chart can more intuitively display the relationship between the two, 
+in order to provide a better solution """)
