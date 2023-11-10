@@ -17,7 +17,10 @@ st.set_page_config(page_title="Correlation Analysis of Price", page_icon=":chart
 st.title(":chart: Correlation Analysis of Price")
 
 st.markdown(""" 
-            ### This page focus on the correlation between prices and other variables in European Airbnb.  """)
+            #####  This page focus on **the analysis of price**. In this page, you can learn about the correlation between prices and other variables in European Airbnb and further analysis of the price.
+             
+Here's a heatmap about price and its top variables that are the most correlated in absolute value
+  """)
 
 plt.style.use("seaborn-v0_8")
 
@@ -45,6 +48,15 @@ plt.title('top 8 variables that are the most correlated /n in absolute value wit
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
+
+st.markdown(""" 
+            There is a stronger correlation between price and three features which are person capacity, room type and guest satisfication.
+  """)
+
+st.markdown(""" 
+This is a boxplot about price analysis in different city. 
+This chart helps customers compare the various special values of accommodation prices in different cities longitudinally.
+  """)
 
 fig, ax = plt.subplots()
 
