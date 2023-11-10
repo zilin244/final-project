@@ -16,7 +16,7 @@ st.markdown("""
 There are different popular room types in different places. People often want to experience a popular local room type as a special experience. 
 **This page analyzes the number and proportion of room types in different cities.**
 
-What are the popular housing types in your target city?
+📍What are the popular room types in your target city?
 
 - The bar chart shows the total number of room types in different cities on Airbnb.
 
