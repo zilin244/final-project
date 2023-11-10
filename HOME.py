@@ -14,7 +14,7 @@ st.markdown(
     Airbnb Europe Dataset is an app which provides a detailed analysis of the data about residential hostels of 9 famous cities in Europe. 
     - Source: The source of data is from the Kaggle website
     
-    (https://www.kaggle.com/datasets/dipeshkhemani/airbnb-cleaned-europe-dataset).
+    (https://www.kaggle.com/datasets/dipeshkhemani/airbnb-cleaned-europe-dataset)
     - Target user: The target users of this app is customers and hosts. 
     - Function: The app not only aims to help customers learn about folklore market situation of this city they want to go and make decisions validly, 
     but also help hosts understand their own strengths and weaknesses and make improvements.
