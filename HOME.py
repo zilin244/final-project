@@ -23,12 +23,11 @@ st.markdown(
     ##### 👈 You can chosee a page in the siderbar!
 
     ### For customers:
-    - Find the determinants of Airbnb prices in European cities after reading **[Correlation Analysis of Price]**
-    - Learn about the average price per person in **[Price]**
+    - Help you make decisions in Price **[Price]**
     - Popular room types in different regions in **[Room Type]**
     - The level of homestay services in different cities in **[Service]**
     ### For hosts:
-    - page1
-    - page2
+    - Learn about the correlation between Attraction Index and other variables in **[Attraction index]**
+    - Distance vs Attraction Index in **[Distance]**
 """
 )
